@@ -1,0 +1,277 @@
+.resume-shell {
+  width: min(960px, 92%);
+  margin: 0 auto;
+  padding: 36px 0 64px;
+  text-align: left;
+}
+
+.profile-card {
+  display: grid;
+  gap: 10px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.profile-avatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-title {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.profile-location {
+  color: var(--text);
+}
+
+.profile-summary {
+  color: var(--text-h);
+  line-height: 1.7;
+}
+
+.section {
+  margin-top: 30px;
+  display: grid;
+  gap: 14px;
+}
+
+.section-header h2 {
+  margin-bottom: 6px;
+}
+
+.section-header p {
+  color: var(--text);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.skill-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  background: var(--bg);
+}
+
+.skill-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.skill-head h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tag-list li {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--text-h);
+  border-radius: 999px;
+  font-size: 13px;
+  padding: 4px 10px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.subheading {
+  margin: 12px 0 0;
+  font-size: 18px;
+}
+
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--bg);
+  display: grid;
+  gap: 10px;
+}
+
+.project-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.project-card-head h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.project-card a,
+.back-link,
+.contact-list a,
+.link-row a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card a:hover,
+.back-link:hover,
+.contact-list a:hover,
+.link-row a:hover {
+  text-decoration: underline;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.timeline-item {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+}
+
+.timeline-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.timeline-head h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.timeline-secondary {
+  color: var(--text);
+}
+
+.timeline ul,
+.detail-section ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.empty-hint {
+  color: var(--text);
+}
+
+.detail-shell {
+  padding-top: 28px;
+}
+
+.detail-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--bg);
+  padding: 22px;
+  margin-top: 14px;
+  display: grid;
+  gap: 16px;
+}
+
+.detail-head {
+  display: grid;
+  gap: 8px;
+}
+
+.detail-head h1 {
+  margin: 0;
+}
+
+.detail-section {
+  display: grid;
+  gap: 10px;
+}
+
+.detail-section h2 {
+  margin: 0;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.not-found-shell {
+  min-height: 70vh;
+  display: grid;
+  align-items: center;
+}
+
+.not-found-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--code-bg);
+  padding: 32px;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  text-align: center;
+}
+
+.not-found-code {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .resume-shell {
+    width: min(920px, 94%);
+    padding: 24px 0 44px;
+  }
+
+  .profile-card,
+  .detail-card,
+  .not-found-card {
+    padding: 18px;
+  }
+
+  .timeline-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
