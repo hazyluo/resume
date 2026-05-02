@@ -24,7 +24,7 @@ export function HomePage() {
         <p className="profile-summary">{resumeData.profile.summary}</p>
       </header>
 
-      <Section id="skills" title="核心技能" subtitle="大模型应用、数据处理与机器学习能力">
+      <Section id="skills" title="核心技能" subtitle="Agent 编排、RAG、评测迭代与数据工程能力">
         <div className="skills-grid">
           {resumeData.skills.length ? (
             resumeData.skills.map((skill) => (
