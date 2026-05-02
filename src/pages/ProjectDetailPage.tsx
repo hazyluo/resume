@@ -1,4 +1,4 @@
-import { Navigate, Link, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import { TagList } from '../components/TagList'
 import { resumeData } from '../utils/resume'
 

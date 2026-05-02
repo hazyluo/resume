@@ -45,6 +45,7 @@ export interface EducationItem {
 
 export interface Contact {
   email: string
+  phone: string
   github: string
   linkedin: string
   website: string

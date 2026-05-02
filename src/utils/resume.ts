@@ -22,6 +22,7 @@ const defaultResumeData: ResumeData = {
   education: [],
   contact: {
     email: '',
+    phone: '',
     github: '',
     linkedin: '',
     website: '',
@@ -110,6 +111,7 @@ const normalizeContact = (value: unknown): Contact => {
 
   return {
     email: asText(parsed.email),
+    phone: asText(parsed.phone),
     github: asText(parsed.github),
     linkedin: asText(parsed.linkedin),
     website: asText(parsed.website),

@@ -1,133 +1,157 @@
-﻿{
+{
   "profile": {
-    "name": "张晨",
-    "title": "前端开发工程师",
-    "summary": "专注 React 与 TypeScript，擅长将复杂业务拆解成可维护组件，关注性能、可访问性和工程质量。",
-    "avatar": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=300&q=80",
-    "location": "上海，中国"
+    "name": "骆子俊",
+    "title": "大模型应用 / Agent / 数据方向实习生",
+    "summary": "北京邮电大学信息与计算科学本科在读，关注大模型应用、Agent 工作流与数据分析。具备 RAG 数据体系搭建、Dify 工作流编排、SQL 查询与机器学习建模经验，能将数据采集、清洗、分析和报告生成串联为可落地的业务工具。",
+    "avatar": "/avatar.jpg",
+    "location": "北京市"
   },
   "skills": [
     {
-      "name": "React",
-      "level": "熟练",
-      "tags": ["Hooks", "Router", "性能优化"]
+      "name": "大模型应用",
+      "level": "熟悉",
+      "tags": ["RAG", "Agent 工作流", "Prompt Engineering", "Dify"]
     },
     {
-      "name": "TypeScript",
-      "level": "熟练",
-      "tags": ["类型建模", "泛型", "严格模式"]
+      "name": "编程与工具",
+      "level": "熟悉",
+      "tags": ["Python", "Pandas", "NumPy", "SQL", "向量数据库基础"]
     },
     {
-      "name": "工程化",
+      "name": "机器学习",
+      "level": "掌握",
+      "tags": ["回归算法", "特征工程", "交叉验证", "模型优化"]
+    },
+    {
+      "name": "数据处理",
+      "level": "掌握",
+      "tags": ["数据清洗", "数据建模", "可视化", "误差分析"]
+    },
+    {
+      "name": "综合能力",
       "level": "良好",
-      "tags": ["Vite", "ESLint", "GitHub Actions"]
-    },
-    {
-      "name": "UI 实现",
-      "level": "良好",
-      "tags": ["响应式布局", "可访问性", "设计还原"]
+      "tags": ["快速学习", "跨团队协作", "业务需求对接"]
     }
   ],
   "projects": [
     {
-      "slug": "commerce-dashboard",
-      "title": "电商经营看板",
-      "summary": "为运营团队搭建实时经营看板，统一展示订单、转化率与库存预警。",
+      "slug": "product-crisis-copilot",
+      "title": "游戏产品舆情报告生成工具",
+      "summary": "独立设计并开发 ProductCrisisCopilot，一款面向游戏产品的负面舆情监控与危机诊断工具。",
       "responsibilities": [
-        "负责核心页面与图表组件开发",
-        "设计前端数据聚合层，降低接口耦合",
-        "推动首屏性能优化并建立监控指标"
+        "设计从产品名输入到报告输出的自动化流程，串联数据采集、清洗、情感分析、问题归因与风险评估。",
+        "围绕产品经理和运营团队的决策场景，输出包含核心问题排序、根因分析和可执行建议的结构化危机报告。",
+        "将传统舆情工具的数量统计扩展为风险识别与原因诊断，提升报告的业务可用性。"
       ],
-      "techStack": ["React", "TypeScript", "ECharts", "Zustand"],
-      "links": {
-        "demo": "https://example.com/dashboard",
-        "repo": "https://github.com/example/commerce-dashboard"
-      },
+      "techStack": ["Python", "数据采集", "情感分析", "风险评估", "报告生成"],
+      "links": {},
       "details": [
-        "将多来源指标统一封装为可复用 hooks，页面开发效率提升约 30%。",
-        "通过代码分割与懒加载优化，首屏加载时间从 2.8s 降至 1.6s。",
-        "补齐异常状态与空数据态，降低运营误判风险。"
+        "实现输入产品名后自动生成危机诊断报告，覆盖数据处理、情绪识别、问题聚类和建议生成。",
+        "报告直接面向产品经理和运营团队，帮助定位高优先级问题与潜在风险。",
+        "项目体现大模型应用、数据工程和业务分析结合能力。"
       ],
       "featured": true
     },
     {
-      "slug": "hr-workflow",
-      "title": "招聘流程协作平台",
-      "summary": "为 HR 与面试官提供职位协作、候选人进度追踪和面试反馈闭环。",
+      "slug": "kaggle-llm-qa",
+      "title": "Kaggle 大语言模型问答系统优化",
+      "summary": "围绕大语言模型问答任务进行模型评测与优化，关注答案质量、评测指标与迭代效果。",
       "responsibilities": [
-        "实现候选人卡片流与筛选条件联动",
-        "编写表单校验与权限控制逻辑",
-        "与后端协作定义状态流转协议"
+        "分析问答任务数据与评测目标，梳理影响回答质量的关键因素。",
+        "对不同策略的输出效果进行对比评测，定位模型回答中的主要问题。",
+        "总结优化方向，为后续 Prompt、检索增强或后处理策略提供依据。"
       ],
-      "techStack": ["React", "TypeScript", "React Query", "Ant Design"],
-      "links": {
-        "repo": "https://github.com/example/hr-workflow"
-      },
+      "techStack": ["大语言模型", "模型评测", "Prompt Engineering", "Python"],
+      "links": {},
       "details": [
-        "重构候选人列表渲染策略，千级数据滚动保持流畅。",
-        "统一错误提示和重试交互，降低用户误操作。",
-        "新增操作审计日志，支持流程追溯与复盘。"
+        "积累了大模型问答任务评测、误差分析和迭代优化经验。",
+        "强化了面向任务目标设计实验和比较方案的能力。"
       ],
       "featured": true
     },
     {
-      "slug": "knowledge-site",
-      "title": "团队知识库站点",
-      "summary": "面向研发团队的文档站点，支持多主题检索和内容分级展示。",
+      "slug": "kaggle-house-prices",
+      "title": "Kaggle 房价预测竞赛",
+      "summary": "竞赛成绩 Top 5%，使用机器学习和数据挖掘方法完成房价预测建模。",
       "responsibilities": [
-        "搭建站点信息架构与导航体验",
-        "实现文档标签检索与高亮",
-        "维护统一样式系统"
+        "用 Pandas 和 NumPy 构建数据预处理 Pipeline，完成数据清洗、缺失值填补、编码和特征处理。",
+        "通过相关矩阵分析特征相关性，对比线性回归、XGBoost 等算法并使用 K 折交叉验证评估泛化能力。",
+        "使用 Grid Search 调优超参数，设计多模型加权融合策略并迭代优化权重。"
       ],
-      "techStack": ["React", "Vite", "Markdown", "CSS Variables"],
-      "links": {
-        "demo": "https://example.com/knowledge"
-      },
+      "techStack": ["Python", "Pandas", "NumPy", "XGBoost", "特征工程", "模型融合"],
+      "links": {},
       "details": [
-        "建立文档卡片模板，减少新内容接入成本。",
-        "优化移动端阅读布局，提升可读性。"
+        "完成从数据清洗、特征工程、模型训练到结果融合的完整机器学习流程。",
+        "最终在 Kaggle 房价预测竞赛中取得 Top 5% 成绩。"
+      ],
+      "featured": true
+    },
+    {
+      "slug": "physics-experiment-contest",
+      "title": "全国大学生物理实验竞赛",
+      "summary": "团队项目，全国二等奖，负责信号采集与数据建模模块。",
+      "responsibilities": [
+        "将实验采集的光纤干涉信号转化为可分析的数据表示。",
+        "通过标定与误差分析建立压力与光学响应之间的定量模型。",
+        "支撑系统性能评估与灵敏度优化，并与团队成员协作完成竞赛交付。"
+      ],
+      "techStack": ["数据建模", "误差分析", "信号处理", "团队协作"],
+      "links": {},
+      "details": [
+        "获得全国大学生物理实验竞赛全国二等奖。",
+        "负责的数据建模模块支撑了系统性能评估和灵敏度优化。"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "dag-gnn-rl-scheduling",
+      "title": "DAG 工作流调度论文研究",
+      "summary": "论文 A scheduling approach with GNN and reinforcement learning for DAG workflows in homogeneous cloud environments 被第 45 届 Chinese Control Conference 录用，Camera-ready version 已提交。",
+      "responsibilities": [
+        "参与 DAG 工作流调度问题研究，关注同构云环境下任务调度策略优化。",
+        "结合图神经网络与强化学习方法，建模任务依赖关系并优化调度决策。",
+        "作为作者之一参与论文撰写、实验整理和 camera-ready 版本提交。"
+      ],
+      "techStack": ["GNN", "强化学习", "DAG 工作流", "云计算调度"],
+      "links": {},
+      "details": [
+        "论文已被第 45 届 Chinese Control Conference 录用。",
+        "研究聚焦 DAG 工作流调度、图神经网络与强化学习结合应用。"
       ],
       "featured": false
     }
   ],
   "experience": [
     {
-      "company": "星海科技有限公司",
-      "role": "前端开发工程师",
-      "period": "2023.07 - 至今",
-      "location": "上海",
+      "company": "腾讯音乐娱乐集团",
+      "role": "基础架构部 · 实习生",
+      "period": "2025.06 - 2025.09",
+      "location": "美股 & 港股上市公司",
       "highlights": [
-        "主导 2 个业务系统前端重构，降低维护复杂度。",
-        "推动组件复用与规范落地，减少重复开发。",
-        "与产品和设计协作，持续优化关键转化路径。"
-      ]
-    },
-    {
-      "company": "云桥网络",
-      "role": "前端开发实习生",
-      "period": "2022.03 - 2022.12",
-      "location": "杭州",
-      "highlights": [
-        "参与后台管理系统模块开发与联调。",
-        "编写单元测试与页面回归清单，提升发布稳定性。"
+        "核心项目：基于 RAG + Dify + SQL 的自动分析系统搭建与运营。",
+        "参与智能编辑器 RAG 模块核心数据准备，设计并维护 100+ 函数原始样本库，为检索增强生成提供高质量上下文支撑，提升模型推理准确性。",
+        "基于 Dify 平台搭建舆情周报自动化工作流，通过 Prompt 为 Agent 分配任务并串联多步骤任务编排。",
+        "结合 SQL 查询支撑市场团队周报自动生成，每周节省 2 天人力成本。"
       ]
     }
   ],
   "education": [
     {
-      "school": "华东理工大学",
-      "degree": "软件工程 本科",
-      "period": "2019.09 - 2023.06",
+      "school": "北京邮电大学",
+      "degree": "信息与计算科学（本科）",
+      "period": "2023.09 - 至今",
       "details": [
-        "主修：数据结构、软件工程、数据库系统。",
-        "毕业设计：面向中小团队的任务协作平台。"
+        "大三在读，GPA：3.5/4。",
+        "主修课程：数学模型、人工智能、机器学习、数据库系统。",
+        "荣誉奖项：北京邮电大学奖学金三等奖（2023.09 - 2024.06）。"
       ]
     }
   ],
   "contact": {
-    "email": "zhangchen@example.com",
-    "github": "https://github.com/example",
-    "linkedin": "https://www.linkedin.com/in/example",
-    "website": "https://example.com"
+    "email": "becky.luo@outlook.com",
+    "phone": "18548921266",
+    "github": "",
+    "linkedin": "",
+    "website": ""
   }
 }

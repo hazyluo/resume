@@ -24,7 +24,7 @@ export function HomePage() {
         <p className="profile-summary">{resumeData.profile.summary}</p>
       </header>
 
-      <Section id="skills" title="技能清单" subtitle="核心能力与关键词">
+      <Section id="skills" title="核心技能" subtitle="大模型应用、数据处理与机器学习能力">
         <div className="skills-grid">
           {resumeData.skills.length ? (
             resumeData.skills.map((skill) => (
@@ -42,7 +42,7 @@ export function HomePage() {
         </div>
       </Section>
 
-      <Section id="projects" title="项目经历" subtitle="点击项目可查看详情页">
+      <Section id="projects" title="项目经历" subtitle="点击项目可查看详细经历">
         <div className="project-grid">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
@@ -50,7 +50,7 @@ export function HomePage() {
         </div>
         {otherProjects.length ? (
           <>
-            <h3 className="subheading">更多项目</h3>
+            <h3 className="subheading">更多经历</h3>
             <div className="project-grid">
               {otherProjects.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
@@ -60,7 +60,7 @@ export function HomePage() {
         ) : null}
       </Section>
 
-      <Section id="experience" title="工作经历">
+      <Section id="experience" title="实习经历">
         <Timeline entries={resumeData.experience} />
       </Section>
 
@@ -73,6 +73,11 @@ export function HomePage() {
           {resumeData.contact.email ? (
             <li>
               <a href={`mailto:${resumeData.contact.email}`}>{resumeData.contact.email}</a>
+            </li>
+          ) : null}
+          {resumeData.contact.phone ? (
+            <li>
+              <a href={`tel:${resumeData.contact.phone}`}>{resumeData.contact.phone}</a>
             </li>
           ) : null}
           {resumeData.contact.github ? (
