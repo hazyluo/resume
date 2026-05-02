@@ -7,14 +7,17 @@ import { resumeData } from '../utils/resume'
 export function HomePage() {
   const featuredProjects = resumeData.projects.filter((project) => project.featured)
   const otherProjects = resumeData.projects.filter((project) => !project.featured)
+  const avatarSrc = resumeData.profile.avatar
+    ? `${import.meta.env.BASE_URL}${resumeData.profile.avatar.replace(/^\//, '')}`
+    : ''
 
   return (
     <main className="resume-shell">
       <header className="profile-card">
-        {resumeData.profile.avatar ? (
+        {avatarSrc ? (
           <img
             className="profile-avatar"
-            src={resumeData.profile.avatar}
+            src={avatarSrc}
             alt={`${resumeData.profile.name} 的头像`}
           />
         ) : null}
