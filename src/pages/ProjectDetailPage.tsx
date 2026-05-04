@@ -15,6 +15,11 @@ export function ProjectDetailPage() {
       ? project.links.paper
       : `${import.meta.env.BASE_URL}${project.links.paper.replace(/^\//, '')}`
     : ''
+  const projectHref = project.links.project
+    ? project.links.project.startsWith('http') || project.links.project === '#'
+      ? project.links.project
+      : `${import.meta.env.BASE_URL}${project.links.project.replace(/^\//, '')}`
+    : ''
 
   return (
     <main className="resume-shell detail-shell">
@@ -77,7 +82,12 @@ export function ProjectDetailPage() {
                 论文 PDF
               </a>
             ) : null}
-            {!project.links.demo && !project.links.repo && !paperHref ? (
+            {projectHref ? (
+              <a href={projectHref} target={projectHref === '#' ? undefined : '_blank'} rel="noreferrer">
+                项目链接
+              </a>
+            ) : null}
+            {!project.links.demo && !project.links.repo && !paperHref && !projectHref ? (
               <p className="empty-hint">暂无外部链接</p>
             ) : null}
           </div>

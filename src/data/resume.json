@@ -10,22 +10,37 @@
     {
       "name": "大模型应用",
       "level": "RAG / Agent Workflow",
-      "tags": ["RAG（数据构建、样本设计、检索优化）", "Agent Workflow（Dify，多步骤任务编排）"]
+      "tags": [
+        "RAG（数据构建、样本设计、检索优化）",
+        "Agent Workflow（Dify，多步骤任务编排）"
+      ]
     },
     {
       "name": "编程",
       "level": "Python / SQL",
-      "tags": ["Python（pandas / numpy）", "SQL（数据查询与分析）"]
+      "tags": [
+        "Python（pandas / numpy）",
+        "SQL（数据查询与分析）"
+      ]
     },
     {
       "name": "机器学习",
       "level": "XGBoost / 回归模型",
-      "tags": ["XGBoost", "回归模型", "交叉验证", "特征工程"]
+      "tags": [
+        "XGBoost",
+        "回归模型",
+        "交叉验证",
+        "特征工程"
+      ]
     },
     {
       "name": "数据处理",
       "level": "清洗 / 过滤 / Pipeline",
-      "tags": ["数据清洗", "规则过滤", "Pipeline 构建"]
+      "tags": [
+        "数据清洗",
+        "规则过滤",
+        "Pipeline 构建"
+      ]
     }
   ],
   "projects": [
@@ -42,7 +57,15 @@
         "分析 GNN+RL 调度方法的 MDP 建模与图表示思路，理解学习型策略相较启发式方法的优势。",
         "相关论文被 Chinese Control Conference 录用。"
       ],
-      "techStack": ["DAG 工作流", "离散事件模拟", "Upward Rank", "DBL", "ACO 蚁群优化", "Makespan 评估", "GNN + RL"],
+      "techStack": [
+        "DAG 工作流",
+        "离散事件模拟",
+        "Upward Rank",
+        "DBL",
+        "ACO 蚁群优化",
+        "Makespan 评估",
+        "GNN + RL"
+      ],
       "links": {
         "paper": "https://hazyluo.github.io/resume/papers/1360-final.pdf"
       },
@@ -64,8 +87,18 @@
         "引入多 Agent 方案推演模块，模拟玩家、运营、产品等角色围绕高风险问题进行对话，比较不同处理方案的适用场景、优缺点与执行成本。",
         "输出包含核心问题、代表评论、风险排序、方案对比和处理建议的结构化游戏舆情分析报告，形成端到端舆情分析与决策辅助 Agent。"
       ],
-      "techStack": ["Python", "微博数据采集", "LLM 语义筛选", "情绪强度识别", "多标签 Topic 抽取", "风险评分", "多 Agent 推演"],
-      "links": {},
+      "techStack": [
+        "Python",
+        "微博数据采集",
+        "LLM 语义筛选",
+        "情绪强度识别",
+        "多标签 Topic 抽取",
+        "风险评分",
+        "多 Agent 推演"
+      ],
+      "links": {
+        "project": "#"
+      },
       "details": [
         "将关键词采集、语义清洗、情绪识别、Topic 抽取、风险评分、多 Agent 方案推演和结构化报告生成串联为端到端舆情分析与决策辅助 Agent。"
       ],
@@ -81,8 +114,18 @@
         "使用 XGBoost 进行建模，并通过 K 折交叉验证评估泛化能力。",
         "采用多模型加权融合（线性回归 + XGBoost），通过调节权重提升最终表现。"
       ],
-      "techStack": ["Python", "Pandas", "NumPy", "XGBoost", "K 折交叉验证", "One-Hot / Label Encoding", "模型融合"],
-      "links": {},
+      "techStack": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "XGBoost",
+        "K 折交叉验证",
+        "One-Hot / Label Encoding",
+        "模型融合"
+      ],
+      "links": {
+        "project": "https://hazyluo.github.io/resume/projects/kaggle-house-prices.ipynb"
+      },
       "details": [
         "针对房价数据中的缺失、类别变量、异常值和偏态分布问题，系统完成预处理与特征变换，降低数据噪声对模型训练的影响。",
         "以交叉验证结果作为主要迭代依据，对比单模型与融合模型表现，最终通过线性回归和 XGBoost 加权融合取得 Top 5% 成绩。"

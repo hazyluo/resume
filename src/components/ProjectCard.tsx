@@ -12,6 +12,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
       ? project.links.paper
       : `${import.meta.env.BASE_URL}${project.links.paper.replace(/^\//, '')}`
     : ''
+  const projectHref = project.links.project
+    ? project.links.project.startsWith('http') || project.links.project === '#'
+      ? project.links.project
+      : `${import.meta.env.BASE_URL}${project.links.project.replace(/^\//, '')}`
+    : ''
 
   return (
     <article className="project-card">
@@ -21,6 +26,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           {paperHref ? (
             <a href={paperHref} target="_blank" rel="noreferrer">
               论文 PDF
+            </a>
+          ) : null}
+          {projectHref ? (
+            <a href={projectHref} target={projectHref === '#' ? undefined : '_blank'} rel="noreferrer">
+              项目链接
             </a>
           ) : null}
           <Link className="project-detail-link" to={`/projects/${project.slug}`}>

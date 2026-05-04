@@ -71,6 +71,7 @@ const normalizeProjects = (value: unknown): ProjectItem[] => {
         demo: asText(links.demo),
         repo: asText(links.repo),
         paper: asText(links.paper),
+        project: asText(links.project),
       },
       details: asStringArray(parsed.details),
       featured: Boolean(parsed.featured),
