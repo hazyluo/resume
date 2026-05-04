@@ -25,9 +25,12 @@
     },
     {
       "name": "机器学习",
-      "level": "XGBoost / 回归模型",
+      "level": "回归模型 / 模型融合",
       "tags": [
-        "XGBoost",
+        "Ridge",
+        "SVR",
+        "KernelRidge",
+        "ElasticNet",
         "回归模型",
         "交叉验证",
         "特征工程"
@@ -107,28 +110,30 @@
     {
       "slug": "kaggle-house-prices",
       "title": "Kaggle 房价预测（Top 5%）",
-      "summary": "围绕房价预测任务构建完整机器学习建模 Pipeline，覆盖数据预处理、特征变换、XGBoost 建模、交叉验证与多模型融合，竞赛成绩 Top 5%。",
+      "summary": "围绕房价预测任务构建完整机器学习建模 Pipeline，覆盖数据预处理、特征变换、回归模型建模、交叉验证与多模型融合，竞赛成绩 Top 5%。",
       "responsibilities": [
-        "构建完整建模 Pipeline，包括缺失值填补、类别特征编码（One-Hot / Label Encoding）及异常值处理。",
-        "对关键特征进行 log 变换以缓解偏态分布，提高模型稳定性。",
-        "使用 XGBoost 进行建模，并通过 K 折交叉验证评估泛化能力。",
-        "采用多模型加权融合（线性回归 + XGBoost），通过调节权重提升最终表现。"
+        "完成缺失值填补、类别变量编码及关键特征 log 变换，降低数据偏态分布影响。",
+        "使用 Ridge、SVR、KernelRidge、ElasticNet 等多种回归模型进行建模，并通过 K 折交叉验证评估各模型泛化能力。",
+        "对比单模型与融合模型表现，采用多模型加权融合策略提升最终预测精度。",
+        "形成从数据清洗、特征优化、模型训练到结果验证的完整机器学习建模链路。"
       ],
       "techStack": [
         "Python",
         "Pandas",
         "NumPy",
-        "XGBoost",
+        "Ridge",
+        "SVR",
+        "KernelRidge",
+        "ElasticNet",
         "K 折交叉验证",
-        "One-Hot / Label Encoding",
         "模型融合"
       ],
       "links": {
         "project": "https://hazyluo.github.io/resume/projects/kaggle-house-prices.ipynb"
       },
       "details": [
-        "针对房价数据中的缺失、类别变量、异常值和偏态分布问题，系统完成预处理与特征变换，降低数据噪声对模型训练的影响。",
-        "以交叉验证结果作为主要迭代依据，对比单模型与融合模型表现，最终通过线性回归和 XGBoost 加权融合取得 Top 5% 成绩。"
+        "针对房价数据中的缺失、类别变量和偏态分布问题，系统完成预处理与特征变换，降低数据噪声对模型训练的影响。",
+        "以交叉验证结果作为主要迭代依据，对比单模型与融合模型表现，最终通过多模型加权融合取得 Top 5% 成绩。"
       ],
       "featured": true
     }

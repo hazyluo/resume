@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>骆子俊 - 简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f3f3f3;
+      color: #111;
+      font-family: "SimSun", "Songti SC", "Noto Serif CJK SC", "Times New Roman", serif;
+      font-size: 12px;
+      line-height: 1.48;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 18px auto;
+      padding: 12mm 13mm 10mm;
+      background: #fff;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .top {
+      display: grid;
+      grid-template-columns: 170px 1fr 84px;
+      align-items: start;
+      column-gap: 20px;
+      margin-bottom: 16px;
+    }
+
+    .school {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-top: 4px;
+    }
+
+    .school-mark {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #9b1010;
+      border-radius: 50%;
+      color: #9b1010;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 13px;
+      font-family: "Times New Roman", serif;
+    }
+
+    .school-name {
+      color: #9b1010;
+      font-size: 23px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .school-en {
+      color: #111;
+      font-size: 10px;
+      margin-top: 5px;
+      letter-spacing: .2px;
+      font-family: "Times New Roman", serif;
+    }
+
+    .identity {
+      text-align: center;
+      padding-top: 6px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.15;
+      font-weight: 700;
+    }
+
+    .role {
+      margin-top: 7px;
+      font-size: 11px;
+      letter-spacing: .1px;
+      font-family: "Times New Roman", "SimSun", serif;
+    }
+
+    .contact {
+      margin-top: 5px;
+      font-size: 11px;
+      font-family: "Times New Roman", "SimSun", serif;
+    }
+
+    .avatar {
+      justify-self: end;
+      width: 74px;
+      height: 92px;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .section {
+      margin-top: 9px;
+    }
+
+    .section-title {
+      margin: 0 0 6px;
+      padding-bottom: 3px;
+      border-bottom: 2px solid #111;
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .summary {
+      margin: 0;
+      text-align: justify;
+    }
+
+    .item {
+      margin: 0 0 7px;
+      break-inside: avoid;
+    }
+
+    .projects .item {
+      margin-bottom: 13px;
+    }
+
+    .item-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 3px;
+      font-weight: 700;
+    }
+
+    .item-title {
+      font-size: 12.5px;
+    }
+
+    .date {
+      font-weight: 400;
+      font-family: "Times New Roman", serif;
+      white-space: nowrap;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 17px;
+    }
+
+    li {
+      margin: 2px 0;
+      padding-left: 2px;
+      text-align: justify;
+    }
+
+    .lead {
+      margin: 0 0 4px;
+      text-align: justify;
+    }
+
+    .link-line {
+      margin: -1px 0 4px;
+      font-family: "Times New Roman", "SimSun", serif;
+      font-size: 11px;
+    }
+
+    .stack {
+      margin-top: 3px;
+      font-size: 11px;
+      font-family: "Times New Roman", "SimSun", serif;
+    }
+
+    .skills {
+      display: grid;
+      gap: 3px;
+    }
+
+    .skill-row {
+      display: grid;
+      grid-template-columns: 116px 1fr;
+      gap: 10px;
+    }
+
+    .skill-row strong {
+      font-weight: 700;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+      <div class="school">
+        <div class="school-mark">BUPT</div>
+        <div>
+          <div class="school-name">北京邮电大学</div>
+          <div class="school-en">BEIJING UNIVERSITY OF POSTS AND TELECOMMUNICATIONS</div>
+        </div>
+      </div>
+      <div class="identity">
+        <h1>骆子俊</h1>
+        <div class="role">Applied AI Intern｜LLM Application｜Agent Workflow｜AI Data & Algorithm</div>
+        <div class="contact">
+          北京市 ｜ 18548921266 ｜ becky.luo@outlook.com ｜ 
+          <a href="https://github.com/hazyluo/resume">Github</a> /
+          <a href="https://hazyluo.github.io/resume/">Project</a> /
+          <a href="https://hazyluo.github.io/resume/papers/1360-final.pdf">Paper</a>
+        </div>
+      </div>
+      <img class="avatar" src="resume-photo.jpg" alt="骆子俊证件照" />
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">个人概述</h2>
+      <p class="summary">
+        北京邮电大学信息与计算科学本科在读，聚焦机器学习建模、大模型应用开发、Agent Workflow 与 AI 数据分析自动化。具备扎实数学建模基础与 Python/SQL 工程能力，拥有企业级 RAG 检索优化、大模型自动化分析链路搭建、调度优化算法仿真及机器学习竞赛实践经验，能够独立完成从数据处理、模型优化到 AI 应用落地的端到端实现。
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">教育背景</h2>
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">北京邮电大学 ｜ 信息与计算科学（本科）</div>
+          <div class="date">2023.09 - 至今</div>
+        </div>
+        <ul>
+          <li>GPA：3.5/4.0；核心课程：高等代数、概率统计、数值分析、数学模型、机器学习、人工智能、数据库系统、Python 程序设计。</li>
+          <li>荣誉/科研：北京邮电大学奖学金三等奖；全国大学生物理实验竞赛全国二等奖（负责信号采集与数据建模）；DAG 工作流调度优化相关论文被 Chinese Control Conference（CCC）录用。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">实习经历</h2>
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">腾讯音乐娱乐集团 ｜ 基础架构部 ｜ 大模型应用实习生</div>
+          <div class="date">2025.06 - 2025.09</div>
+        </div>
+        <ul>
+          <li>参与内部知识问答场景的 RAG 数据构建与检索优化，围绕文档切分策略、字段结构设计、召回链路调优及人工评测机制优化知识检索效果，核心业务问题召回率提升至 95%+。</li>
+          <li>基于 SQL 数据接入、LLM 摘要生成与 Dify Workflow 搭建舆情周报自动化分析链路，实现多源数据汇总、关键信息抽取、风险归纳及结构化报告自动生成，周均减少约 16+ 小时人工整理成本。</li>
+          <li>参与非结构化文本清洗、Prompt 调优及结果验证流程，提升大模型在业务分析场景下的信息覆盖率与输出稳定性。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section projects">
+      <h2 class="section-title">核心项目经历</h2>
+
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">ProductCrisisCopilot｜游戏舆情分析与风险决策 Agent</div>
+          <div class="date"><a href="https://github.com/hazyluo/resume">Github</a> / Demo（链接待补）</div>
+        </div>
+        <p class="lead">面向游戏产品舆情风险识别与运营决策场景，构建基于 LLM 的端到端舆情分析 Agent，实现从微博评论抓取、语义清洗、问题聚类到风险报告自动生成的完整分析闭环。</p>
+        <ul>
+          <li>搭建微博游戏舆情数据采集管道，围绕游戏名称、版本更新及争议事件关键词抓取帖子与评论，累计形成万级舆情文本样本池。</li>
+          <li>设计“规则过滤 + LLM 语义筛选”双层清洗机制，有效过滤广告、引流及无效社区噪声文本，显著提升有效分析文本占比。</li>
+          <li>基于大模型实现评论情绪强度识别与多标签 Topic 抽取，将非结构化文本映射为玩法、数值、氪金、运营活动等结构化问题空间。</li>
+          <li>设计融合负面占比、评论增长速度与情绪强度的舆情风险评分机制，实现高风险话题自动识别与代表性评论筛选。</li>
+          <li>引入多 Agent 方案推演模块，模拟玩家、产品、运营等角色对高风险问题进行处理方案分析，自动生成结构化舆情洞察报告。</li>
+        </ul>
+        <div class="stack">Tech Stack：Python ｜ 微博数据采集 ｜ LLM 语义筛选 ｜ 情绪分析 ｜ Topic 抽取 ｜ 风险评分 ｜ Multi-Agent Workflow</div>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">DAGScheduler-RL｜基于 GNN 与强化学习的 DAG 工作流调度优化</div>
+          <div class="date"><a href="https://hazyluo.github.io/resume/papers/1360-final.pdf">Paper</a></div>
+        </div>
+        <p class="lead">围绕云环境中的 DAG 工作流调度问题，构建任务执行仿真系统与统一算法评估框架，对多类调度策略在 makespan 优化目标下的性能进行横向比较，并完成学习型调度方法建模分析。</p>
+        <ul>
+          <li>建模云环境下 DAG 工作流调度问题，在同构 executor 约束下以最小化 makespan 为目标进行资源分配优化。</li>
+          <li>搭建 DAG 随机生成与离散事件模拟环境，支持不同 DAG 规模、拓扑结构及资源配置下的批量实验。</li>
+          <li>实现 Upward Rank、DBL、ACO 等多类启发式/群智能调度算法，并完成多组实验条件下的性能对比。</li>
+          <li>构建统一 benchmark 评估框架，对传统启发式算法与 GNN+RL 学习型调度方法进行横向分析；相关研究成果被 Chinese Control Conference（CCC）录用。</li>
+        </ul>
+        <div class="stack">Tech Stack：DAG Workflow ｜ 离散事件模拟 ｜ Makespan 优化 ｜ Upward Rank ｜ DBL ｜ ACO ｜ GNN+RL</div>
+      </div>
+
+      <div class="item">
+        <div class="item-head">
+          <div class="item-title">Kaggle House Prices Prediction｜机器学习建模（Top 5%）</div>
+          <div class="date"><a href="https://hazyluo.github.io/resume/projects/kaggle-house-prices.ipynb">Kaggle Notebook</a></div>
+        </div>
+        <p class="lead">围绕房价预测任务构建完整机器学习建模 Pipeline，覆盖数据预处理、特征工程、回归模型建模、交叉验证与多模型融合，竞赛成绩进入 Top 5%。</p>
+        <ul>
+          <li>完成缺失值填补、类别变量编码及关键特征 log 变换，降低数据偏态分布影响。</li>
+          <li>使用 Ridge、SVR、KernelRidge、ElasticNet 等多种回归模型进行建模，并通过 K 折交叉验证评估各模型泛化能力；对比单模型与融合模型表现，采用多模型加权融合策略提升最终预测精度。</li>
+          <li>形成从数据清洗、特征优化、模型训练到结果验证的完整机器学习建模链路。</li>
+        </ul>
+        <div class="stack">Tech Stack：Python ｜ Pandas ｜ NumPy ｜ Ridge ｜ SVR ｜ KernelRidge ｜ ElasticNet ｜ Cross Validation ｜ Ensemble</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">技术能力</h2>
+      <div class="skills">
+        <div class="skill-row"><strong>Programming & Data</strong><span>Python、SQL、Pandas、NumPy、Matplotlib</span></div>
+        <div class="skill-row"><strong>Machine Learning</strong><span>回归模型、特征工程、交叉验证、模型融合、数据预处理</span></div>
+        <div class="skill-row"><strong>LLM Application</strong><span>Prompt Engineering、RAG、文本清洗、LLM 信息抽取、Agent Workflow、Dify</span></div>
+        <div class="skill-row"><strong>Algorithm & Optimization</strong><span>DAG 调度优化、离散事件模拟、启发式算法、ACO、GNN+RL 建模理解</span></div>
+        <div class="skill-row"><strong>Engineering</strong><span>数据采集脚本开发、自动化报告生成、实验评估框架搭建</span></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
