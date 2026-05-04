@@ -121,3 +121,65 @@ a {
     opacity: 0.45;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 9mm;
+  }
+
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #ffffff;
+    --panel: #ffffff;
+    --panel-strong: #ffffff;
+    --line: #d7d7d7;
+    --line-strong: #bdbdbd;
+    --text: #202020;
+    --text-strong: #000000;
+    --accent: #0b6f68;
+    --accent-soft: #eef7f6;
+    --accent-alt: #9b4f0d;
+    --shadow-sm: none;
+    --shadow-lg: none;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: auto;
+    width: 100%;
+    background: #ffffff !important;
+  }
+
+  body {
+    color: #202020;
+    font-size: 10.5px;
+    line-height: 1.38;
+    letter-spacing: 0;
+    overflow: visible;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  body::before,
+  body::after {
+    content: none;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 11.5px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

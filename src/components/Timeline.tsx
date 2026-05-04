@@ -13,7 +13,7 @@ export function Timeline({ entries }: TimelineProps) {
     <ol className="timeline">
       {entries.map((entry) => {
         const key = `${entry.period}-${'company' in entry ? entry.company : entry.school}`
-        const heading = 'company' in entry ? `${entry.role} · ${entry.company}` : `${entry.degree} · ${entry.school}`
+        const heading = 'company' in entry ? `${entry.company} · ${entry.role}` : `${entry.degree} · ${entry.school}`
         const secondary = 'company' in entry ? entry.location : ''
         const details = 'highlights' in entry ? entry.highlights : entry.details
 

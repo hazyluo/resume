@@ -22,6 +22,42 @@
   animation: rise-in 0.55s ease-out both;
 }
 
+.profile-main-row {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.profile-main-content {
+  z-index: 1;
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.profile-contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+.profile-contact-list a {
+  display: inline-flex;
+  border-radius: 999px;
+  border: 1px solid rgba(11, 143, 133, 0.22);
+  padding: 3px 9px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #0d7068;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .profile-card::after {
   content: '';
   position: absolute;
@@ -175,10 +211,18 @@
   font-weight: 600;
 }
 
-.project-grid {
+.project-grid,
+.project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   gap: 13px;
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+}
+
+.project-list {
+  grid-template-columns: 1fr;
 }
 
 .subheading {
@@ -193,6 +237,14 @@
   padding: 16px;
   display: grid;
   gap: 12px;
+}
+
+.project-print-details {
+  display: none;
+}
+
+.project-print-details ul {
+  margin: 0;
 }
 
 .project-card::before {
@@ -210,6 +262,13 @@
   justify-content: space-between;
   gap: 10px;
   align-items: center;
+}
+
+.project-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
 }
 
 .project-card-head a,
@@ -383,6 +442,15 @@
     padding: 18px;
   }
 
+  .profile-contact-list {
+    justify-content: flex-start;
+    max-width: none;
+  }
+
+  .profile-main-row {
+    grid-template-columns: 80px minmax(0, 1fr);
+  }
+
   .section-header,
   .timeline-head,
   .project-card-head {
@@ -394,5 +462,177 @@
     width: 80px;
     height: 80px;
     border-radius: 18px;
+  }
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .resume-shell {
+    width: 100%;
+    padding: 0;
+    gap: 7px;
+  }
+
+  .profile-card,
+  .section,
+  .detail-card,
+  .not-found-card {
+    background: #ffffff !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    opacity: 1 !important;
+    border-radius: 8px;
+    padding: 8px 10px;
+  }
+
+  .profile-card,
+  .detail-card,
+  .not-found-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .profile-main-row {
+    grid-template-columns: 58px minmax(0, 1fr);
+    align-items: start;
+    gap: 4px 10px;
+  }
+
+  .profile-contact-list {
+    gap: 3px;
+  }
+
+  .profile-contact-list a {
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 9px;
+    background: #ffffff;
+  }
+
+  .profile-card::after,
+  .project-card::before {
+    content: none;
+  }
+
+  .profile-avatar {
+    grid-row: 1 / span 4;
+    width: 54px;
+    height: 54px;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+
+  .profile-title {
+    margin-top: 0;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-size: 9px;
+    letter-spacing: 0;
+  }
+
+  .profile-location,
+  .profile-summary {
+    max-width: none;
+  }
+
+  .section {
+    gap: 5px;
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  .section-header {
+    gap: 4px 10px;
+  }
+
+  .section-header p {
+    display: none;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+  }
+
+  .skill-card,
+  .project-card,
+  .timeline-item {
+    box-shadow: none !important;
+    transform: none !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .skill-card,
+  .project-card,
+  .timeline-item {
+    border-radius: 7px;
+    padding: 6px 8px;
+    gap: 4px;
+  }
+
+  .skill-head {
+    margin-bottom: 4px;
+  }
+
+  .skill-head span,
+  .timeline-head span {
+    font-size: 10px;
+  }
+
+  .tag-list {
+    gap: 4px;
+  }
+
+  .tag-list li {
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 9px;
+  }
+
+  .project-list,
+  .timeline {
+    gap: 5px;
+  }
+
+  .project-card-head,
+  .timeline-head {
+    gap: 8px;
+  }
+
+  .project-card-head a,
+  .back-link,
+  .contact-list a,
+  .link-row a {
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 9px;
+  }
+
+  .project-detail-link {
+    display: none;
+  }
+
+  .project-print-details {
+    display: grid;
+    gap: 4px;
+  }
+
+  .timeline ul,
+  .detail-section ul,
+  .project-print-details ul {
+    margin: 0;
+    gap: 2px;
+    padding-left: 14px;
+  }
+
+  .contact-list {
+    gap: 5px;
   }
 }

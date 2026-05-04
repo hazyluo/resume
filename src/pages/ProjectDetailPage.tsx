@@ -10,6 +10,12 @@ export function ProjectDetailPage() {
     return <Navigate to="/404" replace />
   }
 
+  const paperHref = project.links.paper
+    ? project.links.paper.startsWith('http')
+      ? project.links.paper
+      : `${import.meta.env.BASE_URL}${project.links.paper.replace(/^\//, '')}`
+    : ''
+
   return (
     <main className="resume-shell detail-shell">
       <Link to="/" className="back-link">
@@ -66,7 +72,12 @@ export function ProjectDetailPage() {
                 源码仓库
               </a>
             ) : null}
-            {!project.links.demo && !project.links.repo ? (
+            {paperHref ? (
+              <a href={paperHref} target="_blank" rel="noreferrer">
+                论文 PDF
+              </a>
+            ) : null}
+            {!project.links.demo && !project.links.repo && !paperHref ? (
               <p className="empty-hint">暂无外部链接</p>
             ) : null}
           </div>

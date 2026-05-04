@@ -15,6 +15,7 @@ export interface SkillItem {
 export interface ProjectLinks {
   demo?: string
   repo?: string
+  paper?: string
 }
 
 export interface ProjectItem {
