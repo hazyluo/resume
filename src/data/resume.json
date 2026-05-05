@@ -100,7 +100,7 @@
         "多 Agent 推演"
       ],
       "links": {
-        "project": "#"
+        "repo": "https://github.com/hazyluo/ProductCrisisCopilot"
       },
       "details": [
         "将关键词采集、语义清洗、情绪识别、Topic 抽取、风险评分、多 Agent 方案推演和结构化报告生成串联为端到端舆情分析与决策辅助 Agent。"
@@ -129,7 +129,7 @@
         "模型融合"
       ],
       "links": {
-        "project": "https://hazyluo.github.io/resume/projects/kaggle-house-prices.ipynb"
+        "project": "https://hazyluo.github.io/resume/projects/%E4%B8%8A%E7%BA%BF.html"
       },
       "details": [
         "针对房价数据中的缺失、类别变量和偏态分布问题，系统完成预处理与特征变换，降低数据噪声对模型训练的影响。",
